@@ -2,4 +2,6 @@
 skrypt minecraft / serwer / onjoin
 
 -napisane przez 4catt
-JEŻELI ZNAJDZIECIE BLAD PISZCIE
+
+
+-JEŻELI ZNAJDZIECIE BLAD PISZCIE
