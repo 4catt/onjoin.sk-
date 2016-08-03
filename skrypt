@@ -12,3 +12,29 @@ on join:
 	send "&cDziekujemy za zakup VIP'a , w nagrode otrzymales 1 diamenta"
 	give 5 apple to all players 
 	send "&aGracz &c%player% &adolaczyl w trybie VIP'a i otrzymales darmowe jablko!"
+
+on first join:
+    give 1 chest named "&aDarmowy skrzynia na start!" to player
+    give 16 steak named "&aDarmowe żarcie na start!" to player
+    give 1 wooden sword of sharpness 10 and fire aspect 5 named "&aDarmowy mieczyk na start!" to player
+    give 1 wooden pickaxe of efficiency 10 named "&aDarmowy kilof na start!" to player
+    send "&cOtrzymales darmowe itemki na start gry!"
+	
+variables:
+    {liczbaodwiedzin} = 0
+on login
+    add 1 to {liczbaodwiedzin}
+	send "&aNasz serwer zostal odwiedzony &c%{liczbaodwiedzin}%" &arazy"
+	
+variables:
+    add 1 to {wejcie.%player%}
+	send "&bodwiedziles nasz serwer juz &9%{wejscie.player%}% &razy!"
+	
+on first join:
+    if player has permission "start.vip":
+        give 1 ender chest named "&aDarmowy Ender Chest na start!" to player
+        give 20 steak named "&aDarmowe jedzonko na start!" to player
+        give 1 diamond sword of sharpness 1 and fire aspect 2 named "&aDarmowy mieczyk na start!" to player
+        give 1 diamond pickaxe of efficiency 1 named "&aDarmowy kilof na start!" to player
+        send "&cOtrzymales darmowe itemki na start gry! Jako grazc z VIP"
+	
